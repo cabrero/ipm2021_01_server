@@ -6,7 +6,7 @@ setup(
     scripts=['p1server/p1-server.py'],
     packages=find_packages(),
     include_package_data=True,
-    data_files = [('', ['p1server/intervalos.csv'])],
+    data_files = [('share/p1-server', ['p1server/intervalos.csv'])],
     zip_safe=False,
     install_requires=[
         'flask',
