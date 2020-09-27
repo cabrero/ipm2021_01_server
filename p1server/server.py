@@ -27,7 +27,7 @@ intervals = {
 def key(interval, asc_des):
     return ",".join((interval, asc_des))
 
-filepath = Path(__file__).parent / 'intervalos.csv'
+filepath = Path(__file__).parent / 'data' / 'intervalos.csv'
 
 data = {}
 with open(filepath, newline= '') as f:
@@ -57,6 +57,6 @@ def _interval(interval, asc_des):
         abort(404)
 
 
-if __name__ == '__main__':
+def main():
     app.run()
 
