@@ -31,7 +31,7 @@ filepath = Path(__file__).parent / 'data' / 'intervalos.csv'
 
 data = {}
 with open(filepath, newline= '') as f:
-    reader = csv.reader(f, skipinitialspace= True, quotechar= "'")
+    reader = csv.reader(f, skipinitialspace= True, quotechar= '"')
     for row in reader:
         interval, asc_des, *song = row
         k = key(interval, asc_des)
