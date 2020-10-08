@@ -21,7 +21,7 @@ intervals = {
     "6M": "4T1ST",
     "7m": "5T",
     "7M": "5T1ST",
-    "8j": "6T"
+    "8a": "6T"
 }
 
 def key(interval, asc_des):
